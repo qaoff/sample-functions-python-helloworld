@@ -2,7 +2,7 @@ import whisperx
 import gc 
 
 def main(event, context):
-    name = event.get("File")
+    name = event.get("payload")
 
 device = "cuda" 
 audio_file = name
