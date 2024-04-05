@@ -5,7 +5,7 @@ def main(event, context):
     name = event.get("File")
 
 device = "cuda" 
-audio_file = "audio.mp3"
+audio_file = name
 batch_size = 16 # reduce if low on GPU mem
 compute_type = "float16" # change to "int8" if low on GPU mem (may reduce accuracy)
 
