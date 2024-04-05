@@ -1,6 +1,9 @@
 import whisperx
 import gc 
 
+def main(event, context):
+    name = event.get("File")
+
 device = "cuda" 
 audio_file = "audio.mp3"
 batch_size = 16 # reduce if low on GPU mem
